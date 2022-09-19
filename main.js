@@ -20,7 +20,7 @@ if(Object.keys(colorObj).includes(colorInOne)){
     // this gets the correct value in the color object or if there is not one errors
     var combo = Object.values(colorObj).find(el => el[0] === colorInOne && el[1] === colorInTwo)
     // check if combo                                Finds the key based on the combo found earlier                else           console log error
-    combo ? console.log(`${combo[0]} + ${combo[1]} = ${Object.keys(colorObj).find(key => colorObj[key] === combo)}`) : console.log("Error: second color input not in calculator or not a valid color used for contructing")
+    combo ? console.log(`${combo[0]} + ${combo[1]} = ${Object.keys(colorObj).find(el => colorObj[el] === combo)}`) : console.log("Error: second color input not in calculator or not a valid color used for contructing")
 }else{
     console.log("Error: first color input not in calculator")
 }
